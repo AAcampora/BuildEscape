@@ -1,0 +1,8 @@
+BuildingEscape/Content/StarterContent/
+*/Intermediate/
+*/Saved/
+*/Source/
+*.VC.db
+*.VC.opendb
+
+*/Binaries/
