@@ -1,9 +1,9 @@
-
-*/Intermediate/
-*/Saved/
+*/build
+*/binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
+BuildingEscape/Content/StarterContent
 *.VC.db
-*.VC.opendb
-
-*/Binaries/
+*.suo
 BuildingEscape 4.14/Content/StarterContent/
-BuildingEscape/Content/StarterContent/
