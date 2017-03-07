@@ -7,3 +7,5 @@ BuildingEscape/Content/StarterContent
 *.VC.db
 *.suo
 BuildingEscape 4.14/Content/StarterContent/
+*.VC.opendb
+*.sln
