@@ -53,6 +53,7 @@ void UGrabber::Grab() {
 	auto ComponentToGrab = HitResult.GetComponent();
 	auto ActorHit = HitResult.GetActor();
 
+	if (!PhysicsHandle) { return; }
 	//if we hit something then attach a physics handle
 	if (ActorHit)
 	{
@@ -67,6 +68,7 @@ void UGrabber::Grab() {
 }
 
 void UGrabber::Release() {
+	if (!PhysicsHandle) { return; }
 	UE_LOG(LogTemp, Warning, TEXT("Grab released"));
 	PhysicsHandle->ReleaseComponent();
 }
@@ -75,7 +77,7 @@ void UGrabber::Release() {
 void UGrabber::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
 	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
-
+	if (!PhysicsHandle) { return; }
 	GetReachLineEnd();
 	// if the physics handle is attached 
 	if (PhysicsHandle->GrabbedComponent)
